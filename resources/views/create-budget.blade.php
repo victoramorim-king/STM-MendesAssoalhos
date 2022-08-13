@@ -84,9 +84,9 @@
             }
 
             .budgetHeaderTitle h1{
-                margin: 0px;
+                margin: 5px 0px -15px;
                 padding: 0px;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: normal;
                 color: #c0c1c1;
             }
@@ -114,21 +114,6 @@
 
             }
 
-            .budgetHeaderOrderNuberInput{
-                border-top: 1px solid #6f6f6f;
-                border-left: 1px solid #5c5c5c;
-                background-image: linear-gradient(#616161, #696969);
-                border-radius: 5px;
-                border-right: 1px solid #484848;
-                color: white;
-                text-align: center;
-                font-family: helvetica;
-                font-size: 35px;
-                font-weight: bold;
-                margin: 3px 0px 0px 0px;
-                width: 100px;
-            }
-
             .budgetHeaderFormInputs{
                 width: 200px;
                 background-image: linear-gradient(#616161, #696969);
@@ -139,8 +124,13 @@
                 color: white;
                 font-family: helvetica;
                 font-weight: bold;
-                margin: 3px 0px 10px 0px ;
+                margin: 3px 0px 0px 0px ;
                 padding: 5px 2px 5px 2px;
+            }
+
+            .budgetHeaderForm label{
+                color: #c0c1c1;
+                margin-top: 5px;
             }
             /* --End budget header */
 
