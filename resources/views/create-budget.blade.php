@@ -12,7 +12,6 @@
         <!-- Styles -->
         <title>Aprendendo PHP</title>
         <style>
-
             input{
               padding: 0px;
               border: none;
@@ -61,6 +60,7 @@
             /* -Start budget container */
             .budgetContainer{
                 border: 1px solid #404040;
+                border-radius: 5px;
                 color: white;
                 font-family: helvetica;
             }
@@ -70,6 +70,7 @@
             .budgetHeader{
                 border-bottom: 1px solid #2f2f2f;
                 background-image: linear-gradient(#373737, #414141);
+                padding: 5px 15px 0px 15px;
             }
 
             .budgetHeaderMenu{
@@ -77,7 +78,9 @@
             }
 
             .budgetHeaderForm{
-                width: 450px;
+                width: 225px;
+                margin: 15px 0px 10px 0px;
+
 
             }
 
@@ -88,6 +91,16 @@
 
             .budgetHeaderFormInputs{
                 width: 200px;
+                background-image: linear-gradient(#616161, #696969);
+                border-top: 1px solid #6f6f6f;
+                border-left: 1px solid #5c5c5c;
+                border-right: 1px solid #484848;
+                border-radius: 5px;
+                color: white;
+                font-family: helvetica;
+                font-weight: bold;
+                margin: 3px 0px 10px 0px ;
+                padding: 5px 2px 5px 2px;
             }
             /* --End budget header */
 
@@ -135,28 +148,33 @@
                                 <label for="consultor">Consultor</label>
                                 <input name="consultor" class="budgetHeaderFormInputs" type="text" value="Lucas Mendes">
 
-
-
-                                <label for="cliente">Cliente</label>
-                                <input name="cliente" class="budgetHeaderFormInputs" type="text">
-                                <label for="data">Data</label>
-                                <input name="data" class="budgetHeaderFormInputs"type="date">
-
-
                                 <label for="logradouro">Logradouro</label>
                                 <input name="logradouro" class="budgetHeaderFormInputs" type="text">
                             </div>
 
+                             <div class="colum budgetHeaderForm">
+                                <label for="cliente">Cliente</label>
+                                <input name="cliente" class="budgetHeaderFormInputs" type="text">
+                                
+                                <label for="numero">Número</label>
+                                <input name="numero" class="budgetHeaderFormInputs" type="text">
+                            </div>
+
                             <div class="colum budgetHeaderForm">
+                                <label for="data">Data</label>
+                                <input name="data" class="budgetHeaderFormInputs"type="date">
+                                
+                                
                                 <label for="bairro">Bairro</label>
                                 <input name="bairro" class="budgetHeaderFormInputs"type="text">
+                            </div>
+
+                             <div class="colum budgetHeaderForm">
                                 <label for="cidade">Cidade</label>
                                 <input name="cidade" class="budgetHeaderFormInputs"type="text" value="São Paulo">
 
                                 <label for="complemento">Complemento</label>
                                 <input name="complemento" class="budgetHeaderFormInputs" type="text">
-                                <label for="numero">Número</label>
-                                <input name="numero" class="budgetHeaderFormInputs" type="text">
                             </div>
 
                             <div class="colum budgetHeaderOrderNumber">
