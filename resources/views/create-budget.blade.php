@@ -54,26 +54,43 @@
 
             /* -Start budget container */
             .budgetContainer{
-
+                border: 1px solid #404040;
             }
             /* --End budget container */
 
             /* -Start budget header */
             .budgetHeader{
+                border-bottom: 1px solid #2f2f2f;
+                background-image: linear-gradient(#373737, #414141);
+                
 
             }
             /* --End budget header */
 
             /* -Start budget body */
             .budgetBody{
+                border-top: 1px solid #141414;
+                 
+            }
 
+            .budgetBodyMenu{
+                border-right: 1px solid #1b1b19;
+                background-image: linear-gradient(#393835, #41403c);
+            }
+
+            .budgetBodyItems{
+                border-left: 1px solid #151515;
+                background-image: linear-gradient(#202020, #2a2a2a);
             }
             /* End budget body */
 
             /* -Start budget footer */
             .budgetFooter{
+                border-top: 1px solid #252525;
+                background-image: linear-gradient(#333333, #413f41);
 
             }
+
             /* --End budget footer */
 
         </style>
@@ -82,21 +99,21 @@
         <div class="row ">
             <div class="colum budgetContainer">
                 <div class="row budgetHeader">
-                    <div class="colum">
-                        
+                    <div class="colum ">
+                        a
                     </div>
                 </div>
                 <div class="row budgetBody">
-                    <div class="colum">
-                        
+                    <div class="colum budgetBodyMenu">
+                        a
                     </div>
-                    <div class="colum">
-                        
+                    <div class="colum budgetBodyItems">
+                        a
                     </div>
                 </div>
                 <div class="row budgetFooter">
                     <div class="colum">
-                        
+                        a
                     </div>
                 </div>
 
