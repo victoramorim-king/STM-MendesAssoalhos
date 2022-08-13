@@ -144,6 +144,24 @@
                 width: 250px;
                 border-right: 1px solid #1b1b19;
                 background-image: linear-gradient(#393835, #41403c);
+                padding: 20px 0px 0px 15px;
+            }
+
+            .budgetBodyMenuLabel{
+                color: #bdbcb8;
+                font-family: helvetica;
+                margin-bottom: 0px;
+            }
+
+            .budgetBodyMenuButton{
+                background-color: transparent;
+                border: none;
+                font-family: helvetica;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: left;
+                color: #f8f7f6;
+                margin: 5px 0px 5px 3px;
             }
 
             .budgetBodyItems{
@@ -218,10 +236,10 @@
                 </div>
                 <div class="row budgetBody">
                     <div class="colum budgetBodyMenu">
-                        <span>Budget Body Menu</span>
-                        <button onClick="adicionarItem()">Adicionar Item</button>
-                        <button onClick="adicionarObservacao()">Adicionar Observação</button>
-                        <button onClick="gerarPDF()">Gerar orçamento em PDF</button>
+                        <label class="budgetBodyMenuLabel">Opções</label>
+                        <button class="budgetBodyMenuButton"onClick="adicionarItem()">Adicionar Item</button>
+                        <button class="budgetBodyMenuButton" onClick="adicionarObservacao()">Adicionar Observação</button>
+                        <button class="budgetBodyMenuButton" onClick="gerarPDF()">Gerar PDF</button>
                     </div>
                     <div class="colum budgetBodyItems">
                         Budget Items
