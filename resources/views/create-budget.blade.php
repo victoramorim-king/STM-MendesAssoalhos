@@ -18,6 +18,7 @@
               font: 16px Arial;
               width: 100%;
               text-align: center;
+              background-color: transparent;
 
             }
 
@@ -30,22 +31,18 @@
             }
 
             table{
-                border: 3px solid;
+               
                 border-collapse: collapse;
             }
 
             tr, td{
-                border: 1px solid;
+                padding: 0px;
             }
 
             th {
-                border: 2px solid;
+                
             }
 
-            textarea{
-                width: 99%;
-                min-height: 30px;
-            }
 
             .row{
                 display: flex;
@@ -153,6 +150,17 @@
                 margin-bottom: 0px;
             }
 
+            #budgetBodyItemLabel{
+                background-color: #2d2d2d;
+
+
+            }
+
+            #budgetBodyItemLabel tr{
+                background-color: blue;
+
+            }
+
             .budgetBodyMenuButton{
                 background-color: transparent;
                 border: none;
@@ -164,10 +172,41 @@
                 margin: 5px 0px 5px 3px;
             }
 
-            .budgetBodyItems{
+            .budgetBodyItemsTest tr:nth-child(odd){
                 width: 100%;
-                border-left: 1px solid #151515;
-                background-image: linear-gradient(#202020, #2a2a2a);
+                background-color: blue;
+                background-image: linear-gradient(#2a2a2a, #292929);
+
+            }
+
+            .budgetBodyItemsTest tr:nth-child(even){
+                width: 100%;
+                background-image: linear-gradient(#212121, #212121);
+
+            }
+
+            .removeBudgetItemButton{
+                position: relative;
+                height: 30px;
+                background-color: #00000022;
+                backdrop-filter: blur(5px);
+                border: none;
+
+            }
+
+            .removeBudgetItemButton:hover{
+                position: relative;
+                height: 30px;
+                background-color: black;
+                backdrop-filter: blur(5px);
+
+            }
+
+
+
+            .budgetBodyItemsTest *{
+                color: #d5d5d5;
+
             }
             /* End budget body */
 
@@ -242,32 +281,17 @@
                         <button class="budgetBodyMenuButton" onClick="gerarPDF()">Gerar PDF</button>
                     </div>
                     <div class="colum budgetBodyItems">
-                        Budget Items
-                    </div>
-                </div>
-                <div class="row budgetFooter">
-                    <div class="colum">
-                        Observations
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        
-        <!-- Start Budget -->
-        <div id="budget">
-        <table>
+                        <table>
             <thead>
-           <tr>
-                <th style="width:160px;">Quantidade</th>
+           <tr id="budgetBodyItemLabel">
+                <th style="width:160px">Quantidade</th>
                 <th style="width:80px;">Unidade</th>
                 <th style="width:500px;">Descrição</th>
                 <th style="width:140px;">Valor Unitário</th>
-                <th style="width:130px;">Total</th>
+                <th style="width:140; height: 30px;">Total</div></th>
             </tr>
             </thead>
-            <tbody id="budgetBody">
+            <tbody id="budgetBody" class="budgetBodyItemsTest">
                 <tr id='budgetItem_0'>
                     <td><input id="budgetItemQuantity_0" Type="number"  min="0" oninput="calcularTotalItem(0)"></td>
                     <td><input Type="text" value="m²"></td>
@@ -291,6 +315,21 @@
                 </tr>
             </tfoot>
         </table>
+                    </div>
+                </div>
+                <div class="row budgetFooter">
+                    <div class="colum">
+                        Observations
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <!-- Start Budget -->
+        <div id="budget">
+        
         </div>
         <!-- End Budget -->
         
