@@ -41,6 +41,17 @@
                 width: 99%;
                 min-height: 30px;
             }
+
+            #row{
+                display: flex;
+                flex-direction: row !important;
+            }
+
+            #colum{
+                display: flex;
+                flex-direction: column !important;
+            }
+            
         </style>
         </head>
     <body class="antialiased" onLoad="initialValue()">
