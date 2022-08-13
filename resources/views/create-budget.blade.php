@@ -55,6 +55,8 @@
             /* -Start budget container */
             .budgetContainer{
                 border: 1px solid #404040;
+                color: white;
+                font-family: helvetica;
             }
             /* --End budget container */
 
@@ -62,7 +64,19 @@
             .budgetHeader{
                 border-bottom: 1px solid #2f2f2f;
                 background-image: linear-gradient(#373737, #414141);
-                
+            }
+
+            .budgetHeaderMenu{
+                width: 200px;
+            }
+
+            .budgetHeaderForm{
+                width: 900px;
+
+            }
+
+            .budgetHeaderOrederNumber{
+                width: 100px;
 
             }
             /* --End budget header */
@@ -74,11 +88,13 @@
             }
 
             .budgetBodyMenu{
+                width: 200px;
                 border-right: 1px solid #1b1b19;
                 background-image: linear-gradient(#393835, #41403c);
             }
 
             .budgetBodyItems{
+                width: 100%;
                 border-left: 1px solid #151515;
                 background-image: linear-gradient(#202020, #2a2a2a);
             }
@@ -100,20 +116,30 @@
             <div class="colum budgetContainer">
                 <div class="row budgetHeader">
                     <div class="colum ">
-                        a
+                        <div class="row">
+                            <div class="colum budgetHeaderMenu">
+                                Header menu
+                            </div>
+                            <div class="colum budgetHeaderForm">
+                                Header form
+                            </div>
+                            <div class="colum budgetHeaderOrderNumber">
+                               Order Number 
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row budgetBody">
                     <div class="colum budgetBodyMenu">
-                        a
+                        Budget Body Menu
                     </div>
                     <div class="colum budgetBodyItems">
-                        a
+                        Budget Items
                     </div>
                 </div>
                 <div class="row budgetFooter">
                     <div class="colum">
-                        a
+                        Observations
                     </div>
                 </div>
 
