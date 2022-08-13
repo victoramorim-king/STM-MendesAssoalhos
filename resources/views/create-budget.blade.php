@@ -42,19 +42,68 @@
                 min-height: 30px;
             }
 
-            #row{
+            .row{
                 display: flex;
                 flex-direction: row !important;
             }
 
-            #colum{
+            .colum{
                 display: flex;
                 flex-direction: column !important;
             }
-            
+
+            /* -Start budget container */
+            .budgetContainer{
+
+            }
+            /* --End budget container */
+
+            /* -Start budget header */
+            .budgetHeader{
+
+            }
+            /* --End budget header */
+
+            /* -Start budget body */
+            .budgetBody{
+
+            }
+            /* End budget body */
+
+            /* -Start budget footer */
+            .budgetFooter{
+
+            }
+            /* --End budget footer */
+
         </style>
         </head>
     <body class="antialiased" onLoad="initialValue()">
+        <div class="row ">
+            <div class="colum budgetContainer">
+                <div class="row budgetHeader">
+                    <div class="colum">
+                        
+                    </div>
+                </div>
+                <div class="row budgetBody">
+                    <div class="colum">
+                        
+                    </div>
+                    <div class="colum">
+                        
+                    </div>
+                </div>
+                <div class="row budgetFooter">
+                    <div class="colum">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
         <button onClick="adicionarItem()">Adicionar Item</button>
         <button onClick="adicionarObservacao()">Adicionar Observação</button>
         <button onClick="gerarPDF()">Gerar orçamento em PDF</button>
