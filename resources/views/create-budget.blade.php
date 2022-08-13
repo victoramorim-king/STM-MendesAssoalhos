@@ -67,6 +67,14 @@
             /* --End budget container */
 
             /* -Start budget header */
+            #headerLogo{
+                max-width: 130px;
+                align-self: center;
+                transform: translateX(-15px);
+                
+
+            }
+
             .budgetHeader{
                 border-bottom: 1px solid #2f2f2f;
                 background-image: linear-gradient(#373737, #414141);
@@ -79,7 +87,7 @@
 
             .budgetHeaderForm{
                 width: 225px;
-                margin: 15px 0px 10px 0px;
+                padding: 15px 0px 10px 0px;
 
 
             }
@@ -111,7 +119,7 @@
             }
 
             .budgetBodyMenu{
-                width: 200px;
+                width: 250px;
                 border-right: 1px solid #1b1b19;
                 background-image: linear-gradient(#393835, #41403c);
             }
@@ -140,7 +148,7 @@
                     <div class="colum ">
                         <div class="row">
                             <div class="colum budgetHeaderMenu">
-                                <span>Header menu<span>
+                                <img id="headerLogo" src="https://res.cloudinary.com/dqxsegouk/image/upload/v1660414713/Mendes%20Assoalhos/mendesAssolahos-logo2_z1qumc.png">
                                 
                             </div>
 
