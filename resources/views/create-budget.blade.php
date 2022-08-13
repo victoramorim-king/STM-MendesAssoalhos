@@ -259,47 +259,6 @@
         <div id="budget">
         <table>
             <thead>
-            <tr>
-                <td colspan="4" style="text-align:center;">AV Ascaz Natal, 161</td>
-                <td  style="text-align:center;">Pedido</td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align:center;"><strong>CNPJ: </strong>26.772.543/0001-06</td>
-                <td  style="text-align:center;">2005</td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align:center;"><strong>Tel e WhatsApp: </strong>(11) 93078-1538</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Consultor</th>
-                <td colspan="4"><input type="text" value="Lucas Mendes"  style="text-align:center;"></td>
-                
-            </tr>
-            <tr>
-                <th>Cliente</th>
-                <td colspan="2"><input type="text" style="text-align:center;"></td>
-                <th>Data</th>
-                <td><input type="date" style="text-align:center;"></td>
-            </tr>
-            <tr>
-                <th>Logradouro</th>
-                <td colspan="2"><input type="text" style="text-align:center;"></td>
-                <th>Número</th>
-                <td><input type="text" style="text-align:center;"></td>
-            </tr>
-            <tr>
-                <th>Bairro</th>
-                <td colspan="2"><input type="text" style="text-align:center;"></td>
-                <th>Cidade</th>
-                <td><input type="text" value="São Paulo"  style="text-align:center;"></td>
-            </tr>
-            <tr>
-                <th>Complemento</th>
-                <td colspan="4"><input type="text"  style="text-align:center;"></td>
-                
-            </tr>
-            <tr><td colspan="5"><hr><td></tr>
            <tr>
                 <th style="width:160px;">Quantidade</th>
                 <th style="width:80px;">Unidade</th>
