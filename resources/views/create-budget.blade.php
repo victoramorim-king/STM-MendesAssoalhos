@@ -12,6 +12,7 @@
         <!-- Styles -->
         <title>Aprendendo PHP</title>
         <style>
+
             input{
               padding: 0px;
               border: none;
@@ -20,19 +21,24 @@
               text-align: center;
 
             }
+
             .budgetItemTotal{
                 width:82%;
             }
+
             .observationItem{
                 width: 97%;
             }
+
             table{
                 border: 3px solid;
                 border-collapse: collapse;
             }
+
             tr, td{
                 border: 1px solid;
             }
+
             th {
                 border: 2px solid;
             }
@@ -71,13 +77,17 @@
             }
 
             .budgetHeaderForm{
-                width: 900px;
+                width: 450px;
 
             }
 
             .budgetHeaderOrederNumber{
                 width: 100px;
 
+            }
+
+            .budgetHeaderFormInputs{
+                width: 200px;
             }
             /* --End budget header */
 
@@ -106,7 +116,6 @@
                 background-image: linear-gradient(#333333, #413f41);
 
             }
-
             /* --End budget footer */
 
         </style>
@@ -118,11 +127,38 @@
                     <div class="colum ">
                         <div class="row">
                             <div class="colum budgetHeaderMenu">
-                                Header menu
+                                <span>Header menu<span>
+                                
                             </div>
+
                             <div class="colum budgetHeaderForm">
-                                Header form
+                                <label for="consultor">Consultor</label>
+                                <input name="consultor" class="budgetHeaderFormInputs" type="text" value="Lucas Mendes">
+
+
+
+                                <label for="cliente">Cliente</label>
+                                <input name="cliente" class="budgetHeaderFormInputs" type="text">
+                                <label for="data">Data</label>
+                                <input name="data" class="budgetHeaderFormInputs"type="date">
+
+
+                                <label for="logradouro">Logradouro</label>
+                                <input name="logradouro" class="budgetHeaderFormInputs" type="text">
                             </div>
+
+                            <div class="colum budgetHeaderForm">
+                                <label for="bairro">Bairro</label>
+                                <input name="bairro" class="budgetHeaderFormInputs"type="text">
+                                <label for="cidade">Cidade</label>
+                                <input name="cidade" class="budgetHeaderFormInputs"type="text" value="São Paulo">
+
+                                <label for="complemento">Complemento</label>
+                                <input name="complemento" class="budgetHeaderFormInputs" type="text">
+                                <label for="numero">Número</label>
+                                <input name="numero" class="budgetHeaderFormInputs" type="text">
+                            </div>
+
                             <div class="colum budgetHeaderOrderNumber">
                                Order Number 
                             </div>
@@ -131,7 +167,10 @@
                 </div>
                 <div class="row budgetBody">
                     <div class="colum budgetBodyMenu">
-                        Budget Body Menu
+                        <span>Budget Body Menu</span>
+                        <button onClick="adicionarItem()">Adicionar Item</button>
+                        <button onClick="adicionarObservacao()">Adicionar Observação</button>
+                        <button onClick="gerarPDF()">Gerar orçamento em PDF</button>
                     </div>
                     <div class="colum budgetBodyItems">
                         Budget Items
@@ -145,12 +184,6 @@
 
             </div>
         </div>
-
-
-        <button onClick="adicionarItem()">Adicionar Item</button>
-        <button onClick="adicionarObservacao()">Adicionar Observação</button>
-        <button onClick="gerarPDF()">Gerar orçamento em PDF</button>
-
 
         
         <!-- Start Budget -->
