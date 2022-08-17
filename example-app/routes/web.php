@@ -14,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('create-budget');
+    return view('welcome');
 });
-
-Route::post('create-budget', [App\Http\Controllers\BudgetController::class, 'store']);
