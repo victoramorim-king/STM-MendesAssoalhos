@@ -21,4 +21,8 @@ class BudgetController extends Controller
 
         dd($request->all());
     }
+   public function gerarPDF(){
+    $pdf = PDF::loadView('pdf');
+    return $pdf->setPaper('a3')->stream('pdf');
+  }
 }
