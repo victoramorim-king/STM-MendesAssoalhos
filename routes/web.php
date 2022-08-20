@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::post('create-budget', [App\Http\Controllers\BudgetController::class, 'store']);
+Route::get('pdf', [App\Http\Controllers\BudgetController::class, 'gerarPDF']);
